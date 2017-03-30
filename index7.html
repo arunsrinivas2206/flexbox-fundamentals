@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CSS flexbox model - Wrapping</title>
+    <!-- Wrapping  -->
+    <style>
+    @media(min-width: 468px) {
+      .container-1, .container-2 {
+        display: flex;
+      }
+    }
+      .container-1 div, .container-2-box {
+        border: 1px solid red;
+        padding: 10px;
+      }
+      .container-3 div {
+        border: 2px dotted blue;
+        padding: 10px;
+      }
+      .box-1 {
+        flex: 2;
+        order: 3;
+      }
+      .box-2 {
+        flex: 1;
+        order: 1;
+      }
+      .box-3 {
+        flex: 1;
+        order: 2;
+      }
+
+      .container-2-box {
+        flex-basis: 27%;
+      }
+      .container-3-box {
+        flex-basis: 10%;
+      }
+      .container-3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-1">
+      <div class="box-1">
+        <h3>Hello world - 1</h3>
+        <p>We have made available a specification of our API using RAML that you can find on the Web API GitHub repo.</p>
+      </div>
+      <div class="box-2">
+        <h3>Hello world - 2</h3>
+        <p>RAML is a YAML-based language that describes RESTful APIs and provides all the information necessary to describe RESTful APIs</p>
+      </div>
+      <div class="box-3">
+        <h3>Hello world - 3</h3>
+        <p>Endpoints marked “OAuth” above require application registration and user authorization via the Spotify Accounts Service to access certain data.</p>
+      </div>
+    </div>
+
+    <div class="container-2">
+      <div class="container-2-box">
+        <h3>Hello world - 1</h3>
+        <p>We have made available a specification of our API using RAML that you can find on the Web API GitHub repo.</p>
+      </div>
+      <div class="container-2-box">
+        <h3>Hello world - 2</h3>
+        <p>RAML is a YAML-based language that describes RESTful APIs and provides all the information necessary to describe RESTful APIs</p>
+      </div>
+      <div class="container-2-box">
+        <h3>Hello world - 3</h3>
+        <p>Endpoints marked “OAuth” above require application registration and user authorization via the Spotify Accounts Service to access certain data.</p>
+      </div>
+    </div>
+
+    <div class="container-3">
+      <div class="container-3-box">
+        <h3>Hello world - 1</h3>
+        <p>We have made available a specification of our API using RAML that you can find on the Web API GitHub repo.</p>
+      </div>
+      <div class="container-3-box">
+        <h3>Hello world - 2</h3>
+        <p>RAML is a YAML-based language that describes RESTful APIs and provides all the information necessary to describe RESTful APIs</p>
+      </div>
+      <div class="container-3-box">
+        <h3>Hello world - 3</h3>
+        <p>Endpoints marked “OAuth” above require application registration and user authorization via the Spotify Accounts Service to access certain data.</p>
+      </div>
+      <div class="container-3-box">
+        <h3>Hello world - 4</h3>
+        <p>Endpoints marked “OAuth” above require application registration and user authorization via the Spotify Accounts Service to access certain data.</p>
+      </div>
+      <div class="container-3-box">
+        <h3>Hello world - 5</h3>
+        <p>Endpoints marked “OAuth” above require application registration and user authorization via the Spotify Accounts Service to access certain data.</p>
+      </div>
+      <div class="container-3-box">
+        <h3>Hello world - 6</h3>
+        <p>Endpoints marked “OAuth” above require application registration and user authorization via the Spotify Accounts Service to access certain data.</p>
+      </div>
+      <div class="container-3-box">
+        <h3>Hello world - 7</h3>
+        <p>Endpoints marked “OAuth” above require application registration and user authorization via the Spotify Accounts Service to access certain data.</p>
+      </div>
+      <div class="container-3-box">
+        <h3>Hello world - 8</h3>
+        <p>Endpoints marked “OAuth” above require application registration and user authorization via the Spotify Accounts Service to access certain data.</p>
+      </div>
+      <div class="container-3-box">
+        <h3>Hello world - 9</h3>
+        <p>Endpoints marked “OAuth” above require application registration and user authorization via the Spotify Accounts Service to access certain data.</p>
+      </div>
+    </div>
+  </body>
+</html>
